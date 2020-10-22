@@ -52,7 +52,7 @@ int main()
         int* sizeM = (int*)MapViewOfFile(sizeMapping, FILE_MAP_READ, 0, 0, 0);
         int* ch = (int*)MapViewOfFile(fileMapping, FILE_MAP_READ, 0, 0, 0);
         int size = *sizeM;
-                cout << "write in file"<< ch[currentWritten - 1];
+                cout << "write in file"<< ch[currentWritten - 1] ;
         if (currentWritten < size)
         {
             ofstream out("D:\\hello.txt", std::ios::app);
